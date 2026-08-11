@@ -11,13 +11,12 @@ body {
 }
 
 #nav {
-    margin: 2vh;
+    padding: 2vh;
     display: flex;
     flex-wrap: wrap;
     background-color: rgba(18, 18, 18, 0.95);
     border-bottom: 2px solid rgba(50, 50, 50);
     justify-content: space-around;
-    padding-bottom: 2vh;
     align-items: center;
     position: sticky;
     top: 0;
@@ -149,10 +148,16 @@ body {
         font-size: 5vh;
         text-underline-offset: 4px;
         text-decoration: underline #ff7a3d;
+        padding-bottom: 2vh;
     }
 
     p {
+        line-height: 1.6;
         font-size: 2.5vh;
+    }
+
+    strong {
+        font-size: 3vh;
     }
 }
 
@@ -167,40 +172,75 @@ body {
 }
 
 #projectgrid {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 5vh;
-    justify-content: space-around;
+
+    @media (min-width:767px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 5vh;
+        justify-content: space-around;
+        align-items: start;
+        row-gap: 4vh;
+
+    }
+
+    @media (max-width:767px) {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-top: 5vh;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        row-gap: 5vh;
+    }
 }
 
 .projectile {
     background-color: rgba(30, 30, 30);
     border: 1px solid rgba(50, 50, 50);
     border-radius: 10px;
-    width: 20%;
+    flex-basis: 21%;
 
-    #prjecttilehead {
+    .prjecttilehead {
         font-size: 3vh;
         text-underline-offset: 4px;
         text-decoration: underline #ff7a3d;
         margin-bottom: 2vh;
+        margin-top: 1vh;
     }
 
-    #projecttilecont {
+    .projecttilecont {
         display: flex;
+        flex-direction: column;
 
         img {
+            @media (min-width:767px) {
+                width: 100%;
+                height: auto;
+
+            }
+
+            @media (max-width:767px) {
+                width: 100%;
+                height: 50vh;
+            }
+
             width: 100%;
-            height: 100%;
+            height: auto;
             object-fit: cover;
             object-position: center;
             filter: brightness(90%);
         }
 
         p {
-            font-size: 2vh;
+            padding-top: 2vh;
+            font-size: 2.5vh;
         }
     }
+}
+
+
+#contact {
+    border-top: 2px solid rgba(50, 50, 50);
 }
 
 #contacthead {
