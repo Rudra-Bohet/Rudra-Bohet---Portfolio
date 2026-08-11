@@ -1,225 +1,246 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html,
 body {
-  scroll-behavior: smooth;
-  background-color: rgba(18, 18, 18);
+    scroll-behavior: smooth;
+    background-color: rgba(18, 18, 18);
 }
 
 #nav {
-  margin: 2vh;
-  display: flex;
-  flex-wrap: wrap;
-  background-color: rgba(18, 18, 18, 0.95);
-  border-bottom: 2px solid rgba(50, 50, 50);
-  justify-content: space-around;
-  padding-bottom: 2vh;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+    margin: 2vh;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(18, 18, 18, 0.95);
+    border-bottom: 2px solid rgba(50, 50, 50);
+    justify-content: space-around;
+    padding-bottom: 2vh;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 
-  #navlogo {
-    font-size: 2vh;
-    color: #ff7a3d;
-    text-align: center;
-  }
+    #navlogo {
+        font-size: 2vh;
+        color: #ff7a3d;
+        text-align: center;
+    }
 
-  #navcont {
-    a {
-      display: inline-block;
-      font-size: 2.5vh;
-      margin-right: 3vw;
-    }
-    a:link {
-      color: rgba(50, 50, 50);
-    }
-    a:visited {
-      color: rgba(50, 50, 50);
-    }
-    a:hover {
-      color: rgba(100, 100, 100);
-      text-decoration: underline rgba(100, 100, 100);
-    }
-    a:active {
-      color: rgba(75, 75, 75);
-    }
-  }
+    #navcont {
+        a {
+            display: inline-block;
+            font-size: 2.5vh;
+            margin-right: 3vw;
+        }
 
-  #navhire {
-    font-size: 3vh;
-    border: 1px solid #ff7a3d;
-    background-color: #ff7a3d;
-    border-radius: 10px;
-    padding: 0.2%;
+        a:link {
+            color: rgba(50, 50, 50);
+        }
 
-    a:link {
-      text-decoration: none;
-      color: rgba(50, 50, 50);
+        a:visited {
+            color: rgba(50, 50, 50);
+        }
+
+        a:hover {
+            color: rgba(100, 100, 100);
+            text-decoration: underline rgba(100, 100, 100);
+        }
+
+        a:active {
+            color: rgba(75, 75, 75);
+        }
     }
-    a:visited {
-      color: rgba(50, 50, 50);
+
+    #navhire {
+        font-size: 3vh;
+        border: 1px solid #ff7a3d;
+        background-color: #ff7a3d;
+        border-radius: 10px;
+        padding: 0.2%;
+
+        a:link {
+            text-decoration: none;
+            color: rgba(50, 50, 50);
+        }
+
+        a:visited {
+            color: rgba(50, 50, 50);
+        }
+
+        a:hover {
+            color: rgba(100, 100, 100);
+            text-decoration: underline rgba(100, 100, 100);
+        }
+
+        a:active {
+            color: rgba(75, 75, 75);
+        }
     }
-    a:hover {
-      color: rgba(100, 100, 100);
-      text-decoration: underline rgba(100, 100, 100);
-    }
-    a:active {
-      color: rgba(75, 75, 75);
-    }
-  }
 }
 
 #landing,
 #about,
 #Projects,
 #contact {
-  margin-top: 5vh;
-  display: flex;
-  color: white;
-  justify-content: center;
-  align-items: center;
-  gap: 5vw;
+    margin-top: 5vh;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
 }
 
 #intro_text {
-  color: white;
-  h1 {
-    font-size: 4vh;
-    margin-bottom: 1vh;
-  }
-  h2 {
-    color: #ff7a3d;
-    font-size: 5vh;
-    text-decoration: underline rgba(50, 50, 50);
-    margin-bottom: 1vh;
-  }
+    color: white;
 
-  #intro_text_badges {
-    display: flex;
-    justify-content: space-around;
-
-    .badge {
-      font-size: 2vh;
-      text-align: center;
-      padding: 1%;
-      color: rgba(100, 100, 100);
-      background-color: rgba(30, 30, 30);
-      border: 1px solid rgba(50, 50, 50);
-      border-radius: 10px;
+    h1 {
+        font-size: 4vh;
+        margin-bottom: 1vh;
     }
-  }
+
+    h2 {
+        color: #ff7a3d;
+        font-size: 5vh;
+        text-decoration: underline rgba(50, 50, 50);
+        margin-bottom: 1vh;
+    }
+
+    #intro_text_badges {
+        display: flex;
+        justify-content: space-around;
+
+        .badge {
+            font-size: 2vh;
+            text-align: center;
+            padding: 1%;
+            color: rgba(100, 100, 100);
+            background-color: rgba(30, 30, 30);
+            border: 1px solid rgba(50, 50, 50);
+            border-radius: 10px;
+        }
+    }
 }
 
 #intro_img {
-  display: flex;
-  flex-grow: 0;
-  color: rgba(100, 100, 100);
-  background-color: rgba(30, 30, 30);
-  border: 1px solid rgba(50, 50, 50);
-  border-radius: 20%;
-  overflow: hidden;
+    display: flex;
+    flex-grow: 0;
+    color: rgba(100, 100, 100);
+    background-color: rgba(30, 30, 30);
+    border: 1px solid rgba(50, 50, 50);
+    border-radius: 20%;
+    overflow: hidden;
 
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    filter: brightness(90%);
-  }
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        filter: brightness(90%);
+    }
 }
+
 #aboutheading {
-  text-align: center;
-  h1 {
-    font-size: 5vh;
-    text-underline-offset: 4px;
-    text-decoration: underline #ff7a3d;
-  }
-  p {
-    font-size: 2.5vh;
-  }
+    text-align: center;
+
+    h1 {
+        font-size: 5vh;
+        text-underline-offset: 4px;
+        text-decoration: underline #ff7a3d;
+    }
+
+    p {
+        font-size: 2.5vh;
+    }
 }
 
 #projecthead {
-  text-align: center;
-  h1 {
-    font-size: 5vh;
-    text-underline-offset: 4px;
-    text-decoration: underline #ff7a3d;
-  }
+    text-align: center;
+
+    h1 {
+        font-size: 5vh;
+        text-underline-offset: 4px;
+        text-decoration: underline #ff7a3d;
+    }
 }
 
 #projectgrid {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 5vh;
-  justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5vh;
+    justify-content: space-around;
 }
 
 .projectile {
-  background-color: rgba(30, 30, 30);
-  border: 1px solid rgba(50, 50, 50);
-  border-radius: 10px;
-  width: 20%;
+    background-color: rgba(30, 30, 30);
+    border: 1px solid rgba(50, 50, 50);
+    border-radius: 10px;
+    width: 20%;
 
-  #prjecttilehead {
-    font-size: 3vh;
-    text-underline-offset: 4px;
-    text-decoration: underline #ff7a3d;
-    margin-bottom: 2vh;
-  }
+    #prjecttilehead {
+        font-size: 3vh;
+        text-underline-offset: 4px;
+        text-decoration: underline #ff7a3d;
+        margin-bottom: 2vh;
+    }
 
-  #projecttilecont {
-    display: flex;
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
-      filter: brightness(90%);
+    #projecttilecont {
+        display: flex;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            filter: brightness(90%);
+        }
+
+        p {
+            font-size: 2vh;
+        }
     }
-    p {
-      font-size: 2vh;
-    }
-  }
 }
 
 #contacthead {
-  text-align: center;
-  h1 {
-    font-size: 5vh;
-    text-underline-offset: 4px;
-    text-decoration: underline #ff7a3d;
-  }
-}
-#contactcont {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 3vh;
-  margin-top: 3vh;
+    text-align: center;
 
-  h3 {
-    text-decoration: none;
-    color: rgba(50, 50, 50);
-  }
-  a:link {
-    text-decoration: none;
-    color: rgba(50, 50, 50);
-    margin-right: 3vw;
-  }
-  a:visited {
-    color: rgba(50, 50, 50);
-  }
-  a:hover {
-    color: rgba(100, 100, 100);
-    text-decoration: underline rgba(100, 100, 100);
-  }
-  a:active {
-    color: rgba(75, 75, 75);
-  }
+    h1 {
+        font-size: 5vh;
+        text-underline-offset: 4px;
+        text-decoration: underline #ff7a3d;
+    }
+}
+
+#contactcont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 3vh;
+    margin-top: 3vh;
+
+    h3 {
+        text-decoration: none;
+        color: rgba(50, 50, 50);
+    }
+
+    a:link {
+        text-decoration: none;
+        color: rgba(50, 50, 50);
+        margin-right: 3vw;
+    }
+
+    a:visited {
+        color: rgba(50, 50, 50);
+    }
+
+    a:hover {
+        color: rgba(100, 100, 100);
+        text-decoration: underline rgba(100, 100, 100);
+    }
+
+    a:active {
+        color: rgba(75, 75, 75);
+    }
 }
