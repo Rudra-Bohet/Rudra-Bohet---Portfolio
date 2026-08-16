@@ -1,13 +1,13 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html,
 body {
-    scroll-behavior: smooth;
-    background-color: rgba(18, 18, 18);
+  scroll-behavior: smooth;
+  background-color: rgba(18, 18, 18);
 }
 
 input,
@@ -15,371 +15,299 @@ button,
 select,
 body,
 textarea {
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #nav {
-    padding: 2vh;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: rgba(18, 18, 18, 0.95);
-    border-bottom: 2px solid rgba(50, 50, 50);
-    justify-content: space-around;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+  padding: 2vh;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(18, 18, 18, 0.95);
+  border-bottom: 2px solid rgba(50, 50, 50);
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 
-    #navlogo {
-        font-size: 2vh;
-        color: #ff7a3d;
-        text-align: center;
+  #navlogo {
+    font-size: 2vh;
+    color: #ff7a3d;
+    text-align: center;
+  }
+
+  #navcont {
+    a {
+      display: inline-block;
+      font-size: 2.5vh;
+      margin-right: 3vw;
     }
 
-    #navcont {
-        a {
-            display: inline-block;
-            font-size: 2.5vh;
-            margin-right: 3vw;
-        }
-
-        a:link {
-            color: rgba(50, 50, 50);
-        }
-
-        a:visited {
-            color: rgba(50, 50, 50);
-        }
-
-        a:hover {
-            color: rgba(100, 100, 100);
-            text-decoration: underline rgba(100, 100, 100);
-        }
-
-        a:active {
-            color: rgba(75, 75, 75);
-        }
+    a:link {
+      color: rgba(50, 50, 50);
     }
 
-    #navhire {
-        font-size: 3vh;
-        border: 1px solid #ff7a3d;
-        background-color: #ff7a3d;
-        border-radius: 10px;
-        padding: 0.2%;
-
-        a:link {
-            text-decoration: none;
-            color: rgba(50, 50, 50);
-        }
-
-        a:visited {
-            color: rgba(50, 50, 50);
-        }
-
-        a:hover {
-            color: rgba(100, 100, 100);
-            text-decoration: underline rgba(100, 100, 100);
-        }
-
-        a:active {
-            color: rgba(75, 75, 75);
-        }
+    a:visited {
+      color: rgba(50, 50, 50);
     }
+
+    a:hover {
+      color: rgba(100, 100, 100);
+      text-decoration: underline rgba(100, 100, 100);
+    }
+
+    a:active {
+      color: rgba(75, 75, 75);
+    }
+  }
+
+  #navhire {
+    font-size: 3vh;
+    border: 1px solid #ff7a3d;
+    background-color: #ff7a3d;
+    border-radius: 10px;
+    padding: 0.2%;
+
+    a:link {
+      text-decoration: none;
+      color: rgba(50, 50, 50);
+    }
+
+    a:visited {
+      color: rgba(50, 50, 50);
+    }
+
+    a:hover {
+      color: rgba(100, 100, 100);
+      text-decoration: underline rgba(100, 100, 100);
+    }
+
+    a:active {
+      color: rgba(75, 75, 75);
+    }
+  }
 }
 
 #landing,
 #about,
 #Projects,
 #contact {
-    margin-top: 5vh;
-    display: flex;
-    color: white;
-    justify-content: center;
-    align-items: center;
-    gap: 5vw;
+  margin-top: 5vh;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  gap: 5vw;
 }
 
 #landing,
 #about {
-    padding-left: 2vw;
-    padding-right: 2vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
 }
 
 #contact,
 #Projects,
 #about {
-    padding-top: 2vh;
-    border-top: 2px solid rgba(50, 50, 50);
+  padding-top: 2vh;
+  border-top: 2px solid rgba(50, 50, 50);
 }
 
 #intro_text {
-    color: white;
+  color: white;
 
-    h1 {
-        font-size: 4vh;
-        margin-bottom: 1vh;
+  h1 {
+    font-size: 4vh;
+    margin-bottom: 1vh;
+  }
+
+  h2 {
+    color: #ff7a3d;
+    font-size: 5vh;
+    text-decoration: underline rgba(50, 50, 50);
+    margin-bottom: 1vh;
+  }
+
+  #intro_text_badges {
+    display: flex;
+    justify-content: space-around;
+
+    .badge {
+      font-size: 2vh;
+      text-align: center;
+      padding: 1%;
+      color: rgba(100, 100, 100);
+      background-color: rgba(30, 30, 30);
+      border: 1px solid rgba(50, 50, 50);
+      border-radius: 10px;
     }
-
-    h2 {
-        color: #ff7a3d;
-        font-size: 5vh;
-        text-decoration: underline rgba(50, 50, 50);
-        margin-bottom: 1vh;
-    }
-
-    #intro_text_badges {
-        display: flex;
-        justify-content: space-around;
-
-        .badge {
-            font-size: 2vh;
-            text-align: center;
-            padding: 1%;
-            color: rgba(100, 100, 100);
-            background-color: rgba(30, 30, 30);
-            border: 1px solid rgba(50, 50, 50);
-            border-radius: 10px;
-        }
-    }
+  }
 }
 
 #intro_img {
-    display: flex;
-    flex-grow: 0;
-    color: rgba(100, 100, 100);
-    background-color: rgba(30, 30, 30);
-    border: 1px solid rgba(50, 50, 50);
-    border-radius: 20%;
-    overflow: hidden;
+  display: flex;
+  flex-grow: 0;
+  color: rgba(100, 100, 100);
+  background-color: rgba(30, 30, 30);
+  border: 1px solid rgba(50, 50, 50);
+  border-radius: 20%;
+  overflow: hidden;
 
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-        filter: brightness(90%);
-    }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(90%);
+  }
 }
 
 #aboutlinkgrid {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 5vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 5vh;
 
-    img {
-        width: auto;
-        height: 10vh;
-    }
+  img {
+    width: auto;
+    height: 10vh;
+  }
 
-    a {
-        transition: 1s;
-    }
+  a {
+    transition: 1s;
+  }
 
-    a:hover {
-        filter: drop-shadow(0 0 8px #00f3ff) drop-shadow(0 0 20px #00f3ff);
-    }
+  a:hover {
+    filter: drop-shadow(0 0 8px #00f3ff) drop-shadow(0 0 20px #00f3ff);
+  }
 }
 
 #aboutheading {
-    text-align: center;
+  text-align: center;
 
-    h1 {
-        font-size: 5vh;
-        text-underline-offset: 4px;
-        text-decoration: underline #ff7a3d;
-        padding-bottom: 2vh;
-    }
+  h1 {
+    font-size: 5vh;
+    text-underline-offset: 4px;
+    text-decoration: underline #ff7a3d;
+    padding-bottom: 2vh;
+  }
 
-    p {
-        line-height: 1.6;
-        font-size: 2.5vh;
-    }
+  p {
+    line-height: 1.6;
+    font-size: 2.5vh;
+  }
 
-    strong {
-        font-size: 3vh;
-    }
+  strong {
+    font-size: 3vh;
+  }
 }
 
 #projecthead {
-    text-align: center;
+  text-align: center;
 
-    h1 {
-        font-size: 5vh;
-        text-underline-offset: 4px;
-        text-decoration: underline #ff7a3d;
-    }
+  h1 {
+    font-size: 5vh;
+    text-underline-offset: 4px;
+    text-decoration: underline #ff7a3d;
+  }
 }
 
 #projectgrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  padding: 2%;
+  gap: 1em;
 
-    @media (min-width:767px) {
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: 5vh;
-        padding-left: 20vw;
-        padding-right: 20vw;
-        justify-content: space-around;
-        align-items: start;
-        row-gap: 4vh;
+  .projectile {
+    background-color: rgba(30, 30, 30);
+    border: 1px solid rgba(50, 50, 50);
+    border-radius: 10px;
+  }
 
-        .projectile {
-            flex-basis: 30%;
+  h3 {
+    text-decoration: underline rgba(100, 100, 100);
+    padding: 1vh;
+  }
 
-            p {
-                padding-top: 2vh;
-                font-size: 2.5vh;
-            }
-        }
-
-    }
-
-    @media (min-width: 768px) and (max-width: 1024px) {
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: 5vh;
-        padding-left: 20vw;
-        padding-right: 20vw;
-        justify-content: space-around;
-        align-items: start;
-        row-gap: 4vh;
-
-        .projectile {
-            flex-basis: 40%;
-
-            p {
-                padding-top: 2vh;
-                font-size: 2.5vh;
-            }
-        }
-    }
-
-    @media (max-width:767px) {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: start;
-        margin-top: 5vh;
-        margin-left: 5vw;
-        margin-right: 5vw;
-        row-gap: 5vh;
-
-        .projectile {
-            width: 40%;
-
-            p {
-                padding-top: 2vh;
-                font-size: 2vh;
-            }
-        }
-    }
-
-    .projectile {
-        background-color: rgba(30, 30, 30);
-        border: 1px solid rgba(50, 50, 50);
-        border-radius: 10px;
-
-        .prjecttilehead {
-            font-size: 3vh;
-            text-underline-offset: 4px;
-            text-decoration: underline #ff7a3d;
-            margin-bottom: 2vh;
-            margin-top: 1vh;
-        }
-
-        .projecttilecont {
-            display: flex;
-            flex-direction: column;
-
-            img {
-
-                width: 100%;
-                height: auto;
-                object-fit: cover;
-                object-position: center;
-                filter: brightness(90%);
-            }
-
-        }
-    }
+  img {
+    width: 100%;
+    height: auto;
+    padding-bottom: 3%;
+  }
 }
 
-
 #contacthead {
-    text-align: center;
+  text-align: center;
 
-    h1 {
-        font-size: 5vh;
-        text-underline-offset: 4px;
-        text-decoration: underline #ff7a3d;
-    }
+  h1 {
+    font-size: 5vh;
+    text-underline-offset: 4px;
+    text-decoration: underline #ff7a3d;
+  }
 }
 
 #contactcont {
-    margin-bottom: 3vh;
-    margin-top: 3vh;
+  margin-bottom: 3vh;
+  margin-top: 3vh;
 }
 
-
 #formin {
-    background-color: rgba(50, 50, 50);
-    border-radius: 10px;
+  background-color: rgba(50, 50, 50);
+  border-radius: 10px;
 
-    input {
-        background-color: rgba(20, 20, 20, 0.5);
-        border: 2px solid rgba(50, 50, 50, 0.5);
-        font-size: 2.5vh;
-        margin: 1vh;
-        color: #ff7a3d;
-        border-radius: 5px;
-        text-align: center;
-    }
+  input {
+    background-color: rgba(20, 20, 20, 0.5);
+    border: 2px solid rgba(50, 50, 50, 0.5);
+    font-size: 2.5vh;
+    margin: 1vh;
+    color: #ff7a3d;
+    border-radius: 5px;
+    text-align: center;
+  }
 
-    textarea {
-        background-color: rgba(20, 20, 20, 0.5);
-        border: 2px solid rgba(50, 50, 50, 0.5);
-        font-size: 2.5vh;
-        margin: 1vh;
-        color: #ff7a3d;
-        border-radius: 5px;
-    }
+  textarea {
+    background-color: rgba(20, 20, 20, 0.5);
+    border: 2px solid rgba(50, 50, 50, 0.5);
+    font-size: 2.5vh;
+    margin: 1vh;
+    color: #ff7a3d;
+    border-radius: 5px;
+  }
 
-    textarea {
-        height: 10vh;
-    }
+  textarea {
+    height: 10vh;
+  }
 
-    input::placeholder {
-        font-size: 2.5vh;
-        margin: 1vh;
-        color: #ff7a3d;
-        border-radius: 5px;
-        text-align: center;
-    }
+  input::placeholder {
+    font-size: 2.5vh;
+    margin: 1vh;
+    color: #ff7a3d;
+    border-radius: 5px;
+    text-align: center;
+  }
 
-    textarea::placeholder {
-        font-size: 2.5vh;
-        margin: 1vh;
-        color: #ff7a3d;
-        border-radius: 5px;
-    }
-
+  textarea::placeholder {
+    font-size: 2.5vh;
+    margin: 1vh;
+    color: #ff7a3d;
+    border-radius: 5px;
+  }
 }
 
 button[type="submit"] {
-    width: 100%;
-    height: 5vh;
-    margin-top: 2vh;
-    background-color: rgba(50, 50, 50);
-    border: 2px solid rgba(100, 100, 100);
-    border-radius: 15px;
-    color: #ff7a3d;
-    font-size: 2.5vh;
+  width: 100%;
+  height: 5vh;
+  margin-top: 2vh;
+  background-color: rgba(50, 50, 50);
+  border: 2px solid rgba(100, 100, 100);
+  border-radius: 15px;
+  color: #ff7a3d;
+  font-size: 2.5vh;
 }
 
 button[type="submit"]:hover,
 input[type="submit"]:hover {
-    background-color: #ff7a3d;
-    color: rgba(18, 18, 18, 1);
-    font-size: 2.5vh;
+  background-color: #ff7a3d;
+  color: rgba(18, 18, 18, 1);
+  font-size: 2.5vh;
 }
