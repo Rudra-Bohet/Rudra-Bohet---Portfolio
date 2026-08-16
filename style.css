@@ -100,6 +100,44 @@ textarea {
   gap: 5vw;
 }
 
+@media (max-width: 475px) {
+  #landing {
+    display: flex;
+    flex-wrap: wrap;
+    #intro_text {
+      h1 {
+        font-size: 4vh;
+        margin-bottom: 1vh;
+      }
+
+      h2 {
+        color: #ff7a3d;
+        font-size: 3vh;
+        text-decoration: underline rgba(50, 50, 50);
+        margin-bottom: 1vh;
+      }
+
+      #intro_text_badges {
+        display: flex;
+        justify-content: space-around;
+
+        .badge {
+          font-size: 2vh;
+          text-align: center;
+          padding: 1%;
+          color: rgba(100, 100, 100);
+          background-color: rgba(30, 30, 30);
+          border: 1px solid rgba(50, 50, 50);
+          border-radius: 10px;
+        }
+      }
+    }
+    #intro_img img {
+      height: 300px;
+    }
+  }
+}
+
 #landing,
 #about {
   padding-left: 2vw;
@@ -123,7 +161,7 @@ textarea {
 
   h2 {
     color: #ff7a3d;
-    font-size: 5vh;
+    font-size: 4.5vh;
     text-decoration: underline rgba(50, 50, 50);
     margin-bottom: 1vh;
   }
@@ -215,8 +253,8 @@ textarea {
 #projectgrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  padding: 2%;
   gap: 1em;
+  padding: 5%;
 
   .projectile {
     background-color: rgba(30, 30, 30);
@@ -231,7 +269,9 @@ textarea {
 
   img {
     width: 100%;
-    height: auto;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
     padding-bottom: 3%;
   }
 }
